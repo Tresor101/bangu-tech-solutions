@@ -13,20 +13,8 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/pages.css">
-    
-    <!-- Component Styles -->
-    <link rel="stylesheet" href="components/navbar/navbar.css">
-    <link rel="stylesheet" href="components/loader/loader.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loader" class="loader">
-        <div class="loader-content">
-            <div class="spinner"></div>
-            <p>Loading Bangu Tech Solutions...</p>
-        </div>
-    </div>
-
     <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="nav-container">
@@ -60,15 +48,90 @@
 
     <!-- Main Content Container -->
     <main id="main-content" class="main-content">
-        <!-- Content will be dynamically loaded here -->
+        <!-- Default Home Content -->
+        <section class="hero section">
+            <div class="container">
+                <div class="hero-content grid grid-cols-2 items-center gap-8">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Building Powerful 
+                            <span class="text-gradient">Web Applications</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Transform your ideas into cutting-edge web applications with modern technologies and expert development
+                        </p>
+                        <div class="hero-buttons flex gap-4 mt-8">
+                            <a href="#" class="btn btn-primary" data-page="contact">Get Started</a>
+                            <a href="#" class="btn btn-secondary" data-page="portfolio">View Our Work</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-graphic">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Bangu Tech Solutions?</h2>
+                <div class="features-grid grid grid-cols-3 gap-8">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Fast Performance</h3>
+                        <p>Optimized applications with lightning-fast load times and smooth user experiences.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure & Reliable</h3>
+                        <p>Enterprise-grade security and reliability built into every application we develop.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile First</h3>
+                        <p>Responsive designs that work perfectly on all devices and screen sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer id="footer" class="footer">
-        <!-- Footer content will be loaded -->
+        <div class="container">
+            <div class="footer-content grid grid-cols-3 gap-8">
+                <div class="footer-section">
+                    <h4>Bangu Tech Solutions</h4>
+                    <p>Building innovative web applications with cutting-edge technologies and expert development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Mobile Apps</li>
+                        <li>Cloud Solutions</li>
+                        <li>Consulting</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@bangutechsolutions.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- Core JavaScript Modules -->
-    <script type="module" src="assets/js/app.js"></script>
+    <!-- Main Application -->
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
